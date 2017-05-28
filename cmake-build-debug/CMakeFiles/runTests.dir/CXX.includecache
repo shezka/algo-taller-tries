@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jscherman/CLionProjects/algo-taller-tries/base/DiccString.hpp
+string
+-
+ostream
+-
+iostream
+-
+cassert
+-
+
+/home/jscherman/CLionProjects/algo-taller-tries/base/tests.cpp
+functional
+-
+future
+-
+gtest/gtest.h
+-
+iostream
+-
+DiccString.hpp
+/home/jscherman/CLionProjects/algo-taller-tries/base/DiccString.hpp
+

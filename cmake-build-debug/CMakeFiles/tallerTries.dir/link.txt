@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -g   CMakeFiles/tallerTries.dir/base/tests.cpp.o  -o tallerTries 

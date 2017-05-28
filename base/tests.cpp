@@ -59,24 +59,24 @@ struct DiccStringTest : public ::testing::Test {
 
 
 TEST_F(DiccStringTest, Definido) {
-	EXPECT_FALSE(vacio.Definido("a"));
-	EXPECT_FALSE(vacio.Definido("aaaa"));
-	EXPECT_FALSE(vacio.Definido("adios"));
+    EXPECT_FALSE(vacio.Definido("a"));
+    EXPECT_FALSE(vacio.Definido("aaaa"));
+    EXPECT_FALSE(vacio.Definido("adios"));
 
-	EXPECT_TRUE(sin_prefijos.Definido("hola"));
-	EXPECT_TRUE(sin_prefijos.Definido("chau"));
-	EXPECT_TRUE(sin_prefijos.Definido("adios"));
+    EXPECT_TRUE(sin_prefijos.Definido("hola"));
+    EXPECT_TRUE(sin_prefijos.Definido("chau"));
+    EXPECT_TRUE(sin_prefijos.Definido("adios"));
 
-	EXPECT_FALSE(sin_prefijos.Definido("h"));
-	EXPECT_FALSE(sin_prefijos.Definido("ho"));
-	EXPECT_FALSE(sin_prefijos.Definido("hol"));
+    EXPECT_FALSE(sin_prefijos.Definido("h"));
+    EXPECT_FALSE(sin_prefijos.Definido("ho"));
+    EXPECT_FALSE(sin_prefijos.Definido("hol"));
 
-	EXPECT_TRUE(con_prefijos.Definido("c"));
-	EXPECT_TRUE(con_prefijos.Definido("casa"));
-	EXPECT_TRUE(con_prefijos.Definido("casona"));
-	EXPECT_FALSE(con_prefijos.Definido("ca"));
-	EXPECT_FALSE(con_prefijos.Definido("cas"));
-	EXPECT_FALSE(con_prefijos.Definido("caso"));
+    EXPECT_TRUE(con_prefijos.Definido("c"));
+    EXPECT_TRUE(con_prefijos.Definido("casa"));
+    EXPECT_TRUE(con_prefijos.Definido("casona"));
+    EXPECT_FALSE(con_prefijos.Definido("ca"));
+    EXPECT_FALSE(con_prefijos.Definido("cas"));
+    EXPECT_FALSE(con_prefijos.Definido("caso"));
 }
 
 TEST_F(DiccStringTest, Obtener) {
