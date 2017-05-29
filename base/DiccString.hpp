@@ -103,9 +103,8 @@ private:
 
     void BorrarTodos(Nodo **todos);
 
-    Nodo* seBorra(const string &clave, int i, DiccString<T>::Nodo *miNodo);
+    bool seBorra(const string &clave, int i, DiccString<T>::Nodo *miNodo);
 
-    const int DiccString<T>::cantSiguientes(const typename DiccString<T>::Nodo &nodo) const;
 };
 
 template<typename T>
@@ -167,16 +166,15 @@ bool DiccString<T>::Definido(const string &clave) const {
    // }
     int size = clave.length();
     int i = 0;
-    Nodo *actuall = raiz;
-    while (i < size) { //bajo por los caracteres hasta llevar a null
-        if (actuall != nullptr || actuall->siguientes[(int)clave[i]] == nullptr) {
+    Nodo *actual = raiz->siguientes[(int)clave[i]];
+    while (i < size - 1) { //bajo por los caracteres hasta llevar a null
+        if (actual == nullptr) {
             return false;
         }
-
-        actuall = actuall->siguientes[(int)clave[i]];
         i++;
+        actual = actual->siguientes[(int)clave[i]];
     }
-    if (actuall->definicion != nullptr) return true;
+    if (actual && actual->definicion != nullptr) return true;
     return false;
     // La función int(char) de c++ devuelve el código ascii de un caracter
 }
@@ -210,98 +208,56 @@ const T &DiccString<T>::Obtener(const string &clave) const {
 template<typename T>
 void DiccString<T>::Borrar(const string &clave) {
 
+    //if (raiz != nullptr) seBorra(clave, 0, raiz->siguientes[(int)clave[0]]);
 
-//BORRAR CODIGO DE ABAJO!! es un lio :(
-        if(raiz == nullptr)  return;
-
-    //delword helper
-    // Recorro toda la clave. Guardo actual en ultimo si tiene 2+ hijos o si tiene una definicion
-    Nodo *actual = raiz, *ultimo = raiz;
-int indiceBifurcacion = 0;
-for(int i = 0; i < clave.length(); ++i) {
-actual = actual->siguientes[(int)clave[i]];
-if ( (cantSiguientes(*actual) > 1) || (actual->definicion != NULL) && (i != clave.length()-1)) {
-ultimo = actual;
-indiceBifurcacion = i;
-}
-}
-
-// Elimino todos los nodos a partir de ultimo
-if (cantSiguientes(*actual) == 0) {
-// La clave a borrar no es un prefijo de otra clave
-if (ultimo == raiz) {
-if (raiz) {
-// Era la unica clave entonces borro el arbol completo
-// La raiz contiene una definicion. Dejo la raiz y borro lo demas
-delete raiz->siguientes[(int)clave[0]];
-raiz->siguientes[(int)clave[0]] = NULL;
-}
-    delete raiz;
-} else {
-// Borro a partir de la ultima bifurcacion
-delete ultimo->siguientes[(int)clave[indiceBifurcacion+1]];
-ultimo->siguientes[(int)clave[indiceBifurcacion+1]] = NULL;
-}
-} else {
-// La clave a borrar es prefijo de otra clave. Solo borro la definicion
-delete actual->definicion;
-actual->definicion = nullptr;
-}
-
-}
-
-template <typename T>
-const int DiccString<T>::cantSiguientes(const typename DiccString<T>::Nodo &nodo) const {
-    int cantSiguientes = 0;
-    for(int i = 0; i < 256; ++i) {
-        if (nodo.siguientes[i] != NULL) ++cantSiguientes;
-    }
-    return cantSiguientes;
-}
-
-
-}
-
-template<typename T>
-typename DiccString<T>::Nodo* DiccString<T>::seBorra(const string &clave, int i, DiccString<T>::Nodo *miNodo) {
-//    if ((miNodo != nullptr) &&
-//
-//        (i == (clave.length() - 1) ||
-//                ((miNodo->definicion == nullptr) &&
-//        (this->seBorra(clave, i++, miNodo->siguientes[int(clave[i++])]))))) {
-//        delete miNodo;
-//        return true;
-//    } else {
-//        return false;
-//    }
-    if (miNodo != nullptr)
+    int j = 1;
+    Nodo* papi = raiz;
+    Nodo* actual = raiz->siguientes[(int)clave[0]];
+    while(seBorra(clave, j, actual) && j < clave.size())
     {
-        if (i == clave.length() || i == clave.length() - 1)
+        if(j == clave.size() - 1)
         {
-           // delete miNodo;
-            return miNodo;
-        } else
+            T* def = actual->definicion;
+            actual->definicion = nullptr;
+            delete def;
+            break;
+        }
+        papi = actual;
+        actual = actual->siguientes[(int)clave[j]];
+        j++; 
+    }
+       if (!seBorra(clave, j, actual))
+       {
+           delete actual;
+           papi->siguientes[(int)clave[j-1]] = nullptr;
+       }
+        if (clave.size() == 1)
         {
-            if (miNodo->definicion == nullptr)
-            {
-                i++;
-                if(seBorra(clave, i, miNodo->siguientes[(int)clave[i]]) ) //borro y dsp vuelvo a borrarrr
-
-                {
-                    //delete miNodo;
-                    return miNodo;
-                } else
-                {
-                    return seBorra(clave, i, miNodo->siguientes[(int)clave[i]]);
-                }
-            }
-            else
-            {
-                return seBorra(clave, i, miNodo->siguientes[(int)clave[i]]);
+            if (!seBorra(clave, 0, raiz->siguientes[(int)clave[0]])) {
+                delete raiz->siguientes[(int) clave[0]];
+                raiz->siguientes[(int) clave[0]] = nullptr;
+            } else{
+                delete raiz->siguientes[(int)clave[0]]->definicion;
+                raiz->siguientes[(int)clave[0]]->definicion = nullptr;
             }
         }
+}
+
+
+
+
+
+
+template<typename T>
+bool DiccString<T>::seBorra(const string &clave, int i, DiccString<T>::Nodo *miNodo) {
+    int j = 0;
+    while(miNodo && j < 256)
+    {
+        if (miNodo->siguientes[j] && (!miNodo->siguientes[j]->definicion || (*miNodo->siguientes[j]->definicion != Obtener(clave)))) return true;
+        j++;
     }
-    return miNodo;
+    return false;
+
 }
 
 #endif
