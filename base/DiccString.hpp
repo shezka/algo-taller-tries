@@ -213,7 +213,7 @@ void DiccString<T>::Borrar(const string &clave) {
     int j = 1;
     Nodo* papi = raiz;
     Nodo* actual = raiz->siguientes[(int)clave[0]];
-    while(seBorra(clave, j, actual) && j < clave.size())
+    while(j < clave.size() && seBorra(clave, j, actual))
     {
         if(j == clave.size() - 1)
         {
@@ -224,7 +224,7 @@ void DiccString<T>::Borrar(const string &clave) {
         }
         papi = actual;
         actual = actual->siguientes[(int)clave[j]];
-        j++; 
+        j++;
     }
        if (!seBorra(clave, j, actual))
        {
@@ -243,17 +243,15 @@ void DiccString<T>::Borrar(const string &clave) {
         }
 }
 
-
-
-
-
-
 template<typename T>
 bool DiccString<T>::seBorra(const string &clave, int i, DiccString<T>::Nodo *miNodo) {
     int j = 0;
     while(miNodo && j < 256)
     {
-        if (miNodo->siguientes[j] && (!miNodo->siguientes[j]->definicion || (*miNodo->siguientes[j]->definicion != Obtener(clave)))) return true;
+        if (miNodo->siguientes[j] && (!miNodo->siguientes[j]->definicion || (*miNodo->siguientes[j]->definicion != Obtener(clave))))
+        {
+            return true;
+        }
         j++;
     }
     return false;
