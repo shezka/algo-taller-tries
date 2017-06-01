@@ -215,7 +215,7 @@ void DiccString<T>::Borrar(const string &clave) {
     Nodo* actual = raiz->siguientes[(int)clave[0]];
     while(j < clave.size() && seBorra(clave, j, actual))
     {
-        if(j == clave.size() - 1)
+        if(j == clave.size())
         {
             T* def = actual->definicion;
             actual->definicion = nullptr;

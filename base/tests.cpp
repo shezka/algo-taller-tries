@@ -151,6 +151,7 @@ TEST_F(DiccStringTest, TrieDeTries) {
     EXPECT_EQ(dicc_dicc.Obtener("con_prefijos").Obtener("c"), 1);
     EXPECT_EQ(dicc_dicc.Obtener("con_prefijos").Obtener("casa"), 2);
     EXPECT_EQ(dicc_dicc.Obtener("con_prefijos").Obtener("casona"), 3);
+
 }
 
 TEST_F(DiccStringTest, BorrarUnicaCLave) {
@@ -173,6 +174,9 @@ TEST_F(DiccStringTest, Borrar) {
     EXPECT_FALSE(con_prefijos.Definido("casona"));
 
     EXPECT_TRUE(con_prefijos.Definido("casa"));
+
+    con_prefijos.Borrar("casa");
+    EXPECT_FALSE(con_prefijos.Definido("casa"));
 
     sin_prefijos.Borrar("hola");
     EXPECT_FALSE(sin_prefijos.Definido("hola"));

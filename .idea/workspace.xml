@@ -13,6 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fc29d68-491d-4c7c-822a-144d96575481" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/runTests.dir/base/tests.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/runTests.dir/base/tests.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/runTests" afterPath="$PROJECT_DIR$/cmake-build-debug/runTests" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/DiccString.hpp" afterPath="$PROJECT_DIR$/base/DiccString.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/tests.cpp" afterPath="$PROJECT_DIR$/base/tests.cpp" />
     </list>
@@ -35,7 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -45,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiccString.hpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DiccString.hpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/DiccString.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="228" column="38" lean-forward="true" selection-start-line="228" selection-start-column="38" selection-end-line="228" selection-end-column="38" />
               <folding>
                 <element signature="e#47#64#0" expanded="true" />
                 <element signature="e#153#165#0" expanded="true" />
@@ -62,7 +65,7 @@
                 <element signature="e#4341#4353#0" expanded="true" />
                 <element signature="e#4730#4742#0" expanded="true" />
                 <element signature="e#5131#5143#0" expanded="true" />
-                <element signature="e#6264#6276#0" expanded="true" />
+                <element signature="e#6260#6272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +74,8 @@
       <file leaf-file-name="tests.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="164" column="21" lean-forward="false" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+            <state relative-caret-position="471">
+              <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,8 +90,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/base/DiccString.hpp" />
         <option value="$PROJECT_DIR$/base/tests.cpp" />
+        <option value="$PROJECT_DIR$/base/DiccString.hpp" />
       </list>
     </option>
   </component>
@@ -445,25 +448,11 @@
       <workItem from="1496020684554" duration="2710000" />
       <workItem from="1496026219869" duration="4556000" />
       <workItem from="1496068345638" duration="3929000" />
+      <workItem from="1496291329059" duration="404000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 15m 40s.xml">
-      <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 23m 28s.xml">
-      <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 25m 14s.xml">
-      <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 32m 56s.xml">
-      <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 32m 58s.xml">
-      <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="DiccStringTest_Borrar - 2017.05.29 at 12h 33m 17s.xml">
       <configuration name="DiccStringTest.Borrar" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
@@ -479,9 +468,24 @@
     <history-entry file="runTests - 2017.05.29 at 12h 39m 04s.xml">
       <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="runTests - 2017.06.01 at 01h 28m 57s.xml">
+      <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="runTests - 2017.06.01 at 01h 31m 04s.xml">
+      <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="runTests - 2017.06.01 at 01h 31m 11s.xml">
+      <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="runTests - 2017.06.01 at 01h 32m 54s.xml">
+      <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="runTests - 2017.06.01 at 01h 33m 57s.xml">
+      <configuration name="runTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31635000" />
+    <option name="totallyTimeSpent" value="32039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,20 +497,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.071862906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0724157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256785" sideWeight="0.4870094" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5129906" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34446764" sideWeight="0.48922056" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3451613" sideWeight="0.48922056" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.4870094" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39874738" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -535,12 +539,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/base/tests.cpp</url>
+          <line>177</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/base/DiccString.hpp</url>
-          <line>179</line>
-          <option name="timeStamp" value="62" />
+          <line>212</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeGoogleTestRunConfigurationType">
@@ -553,6 +562,43 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/DiccString.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3580">
+          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#64#0" expanded="true" />
+            <element signature="e#153#165#0" expanded="true" />
+            <element signature="e#2452#2464#0" expanded="true" />
+            <element signature="e#2544#2556#0" expanded="true" />
+            <element signature="e#2677#2689#0" expanded="true" />
+            <element signature="e#2786#2795#0" expanded="true" />
+            <element signature="e#2993#3005#0" expanded="true" />
+            <element signature="e#3721#3733#0" expanded="true" />
+            <element signature="e#4341#4353#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#5131#5143#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3280">
+          <caret line="164" column="21" lean-forward="false" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -585,7 +631,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,7 +668,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -659,7 +705,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,7 +742,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,7 +779,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -770,7 +816,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,7 +853,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,7 +890,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,7 +919,7 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -886,10 +932,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/DiccString.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        <state relative-caret-position="143">
+          <caret line="228" column="38" lean-forward="true" selection-start-line="228" selection-start-column="38" selection-end-line="228" selection-end-column="38" />
           <folding>
             <element signature="e#47#64#0" expanded="true" />
             <element signature="e#153#165#0" expanded="true" />
@@ -902,24 +964,8 @@
             <element signature="e#4341#4353#0" expanded="true" />
             <element signature="e#4730#4742#0" expanded="true" />
             <element signature="e#5131#5143#0" expanded="true" />
-            <element signature="e#6264#6276#0" expanded="true" />
+            <element signature="e#6260#6272#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="164" column="21" lean-forward="false" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
